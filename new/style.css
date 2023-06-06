@@ -1,19 +1,19 @@
 *,
-*::before
-*::after {
+*::before *::after {
     box-sizing: border-box;
 }
-header{
-   
+
+header {
+
     justify-content: space-between;
-    
+
 }
 
-.nav{
+.nav {
     background-color: chartreuse;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -29,16 +29,17 @@ header{
     
 } */
 
-.nav_list{
+.nav_list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
 }
-.nav_items{
+
+.nav_items {
     display: inline-flex;
-    align-items:center;
+    align-items: center;
     margin: 0 iem;
     padding: 2px;
     background-color: orange;
@@ -48,14 +49,15 @@ header{
     margin-inline-start: 20px;
 }
 
-.nav li:hover{
+.nav li:hover {
     background-color: grey;
     padding-top: -1em;
     padding-bottom: -1em;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: aliceblue;
     display: inline-block;
