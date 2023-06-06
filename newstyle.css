@@ -3,56 +3,61 @@
 *::after {
     box-sizing: border-box;
 }
-
-
-.nav{
-    background-color: chartreuse;
-    border-radius: 25px;
-    
-    
-}
-.header{
+header{
    
     justify-content: space-between;
     
-    
 }
+
+.nav{
+    background-color: chartreuse;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo{
     width: 75px;
-    position: relative;
-    float: none;
-    margin: -50px 50% 0 auto;
+    position: absolute;
+    left: 47.5%;
+    
+    top: 5%;
+    transform: translateY(-45%);
     z-index: 999;
     
 }
-@media (max-width: 480px){
-    .logo{
-        float:none;
-        margin: 25px auto 0 auto;
-       
-    
 
-    }
-}
-.nav_list ul{
-    list-style: style none;
+.nav_list{
+    list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
-    display: inline-block;
-    
-    
+    display: flex;
+    align-items: center;
 }
-.nav li{
-    display:inline-flex;
-    vertical-align: center;
-   
+.nav_items{
+    display: inline-flex;
+    align-items:center;
+    margin: 0 iem;
+    padding: 2px;
+    background-color: orange;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-inline-end: 20px;
+    margin-inline-start: 20px;
+}
+
+.nav li:hover{
+    background-color: grey;
+    padding-top: -1em;
+    padding-bottom: -1em;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .nav a{
     text-decoration: none;
     color: aliceblue;
-    
-    width: 100px;
     display: inline-block;
     padding: 20px 20px;
     text-transform: uppercase;
