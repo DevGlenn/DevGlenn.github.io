@@ -1,90 +1,158 @@
-*,
-*::before *::after {
-    box-sizing: border-box;
+body {
+    font-family: 'Montserrat';
+    font-weight: 500;
 }
 
-header {
-
-    justify-content: space-between;
-
-}
-
-.nav {
-    background-color: chartreuse;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.nav_list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-.nav_items {
-    display: inline-flex;
-    align-items: center;
-    margin: 0 iem;
-    padding: 2px;
-    background-color: orange;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-inline-end: 20px;
-    margin-inline-start: 20px;
-
-}
-.nav_link{
-    align-items: center;
-}
-
-.nav li:hover {
-    background-color: grey;
-    padding-top: -1em;
-    padding-bottom: -1em;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: aliceblue;
-    display: inline-block;
-    padding: 20px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav {
+.navbar {
+    background-color: #E6F9DE;
+    margin: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.05fr 1fr;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
 }
 
-.nav-left {
-    justify-self: start;
-    align-self: start;
-    align-content: center;
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: end;
+    align-items: right;
 }
 
-.nav-right {
-    align-self: start;
-    justify-self: end;
+.navbar-logo {
+    background-color: #D0E2C8;
+    padding: 5px 10px 5px 20px;
+    border-radius: 5px;
+    width:120%;
 }
 
-.nav-center {
-    justify-self: center;
+.item {
+    background-color: #D0E2C8;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.nav ul {
-    padding: 0px;
-    padding-inline-start: 0px;
-    margin: 0;
+.hr {
+    width: 80%;
+    border: 1px solid #E6F9DE;
+}
+.hr2{
+    width: 80%;
+    border: 1px solid #E6F9DE;
+    margin-top: 20px;
+}
+.hr3{
+    border: 1px solid #343F4B;
+    width: 75%;
+    margin-top: 25%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.hero-image {
+    background-image: url(/assets/images/PF_BW.png);
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+
+    background-size: cover;
+}
+
+.hero-content {
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.hero-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #47525E;
+}
+
+.hero-subtext {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #47525E;
+    font-weight: normal;
+}
+.skills-container{
+    text-align: center;
+}
+.skills-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #47525E;
+}
+
+.skills-subtext {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #47525E;
+}
+.text-container{
+    background-color: #E6F9DE;
+    border-radius: 15px;
+    padding: 20px;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size:18px;
+
+}
+
+.text-container2{
+    background-color: #E6F9DE;
+    border-radius: 15px;
+    padding: 20px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size:18px;
+
+}
+
+.divider{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    place-items: center;
+}
+
+.divider-right{
+    background-image: url(/assets/images/werklogo.png);
+    background-repeat: no-repeat;
+    width:400px;
+    height:400px;
+    background-size: cover;
+}
+
+/* .arrow-right{
+    position: relative;
+    top:30px;
+    left:400px;
+    background-image: url(/assets/images/arrow-right.png);
+   background-size: cover;
+    width: 100px;
+    height: 100px;
     
-}
+} */
