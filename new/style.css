@@ -177,6 +177,28 @@ body {
     margin-top: 40px;
     text-align: center;
     font-size:18px;
+    transition: background-color 0.3s ease;
+}
+.defense-text-container:hover{
+    background-color: #e2fed6;
+     transition: opacity 0.3s ease;
+}
+.defense-text-container::after{
+  content: ""; /* Content to be added on hover */
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.defense-text-container .box-text-defense {
+    transition: opacity 0.3s ease;
+  }
+.defense-text-container:hover .box-text-defense {
+    opacity: 0;
+}
+.defense-text-container:hover::after{
+    content: "I made a quiz application for the new interns for my internship. There were question about ranking within the military and general do's and don't. I was very happy with the project, because of it I got offered a job at the ministries Simulation Central building to work on guiding the new Interns. Skills: Unity & C#";
+    opacity: 1;
 }
 .kapper-text-container{
     background-color: #E6F9DE;
@@ -188,6 +210,29 @@ body {
     margin-top: 40px;
     text-align: center;
     font-size:18px;
+    transition: background-color 0.3s ease;
+}
+.kapper-text-container:hover{
+    background-color: #e2fed6;
+    transition: opacity 0.3s ease;
+}
+.kapper-text-container::after{
+    content: ""; /* Content to be added on hover */
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.kapper-text-container .box-text-kapper {
+    transition: opacity 0.3s ease;
+}
+
+.kapper-text-container:hover .box-text-kapper {
+    opacity: 0;
+ }
+.kapper-text-container:hover::after{
+    content: "For school we had to make a application for a barber, this could be anything. We decided to make a website with a backend portal. We ran into a lot of problems with teamwork and workload. I learned alot from this project about teamwork and it was also the start of my journey with CSS & HTML. Skills: HTML & CSS Frontend";
+    opacity: 1;
 }
 .portfolio-text-container{
     background-color: #E6F9DE;
@@ -195,12 +240,33 @@ body {
     padding: 20px;
     width: 800px;
     height: 500px;
-    
     margin-right: 24px;
     margin-top: 40px;
     text-align: center;
     font-size:18px;
+    transition: background-color 0.3s ease;
 }
+.portfolio-text-container:hover{
+    background-color: #e2fed6;
+    transition: opacity 0.3s ease;
+}
+.portfolio-text-container::after{
+    content: ""; /* Content to be added on hover */
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .portfolio-text-container .box-text-portfolio {
+      transition: opacity 0.3s ease;
+    }
+  .portfolio-text-container:hover .box-text-portfolio {
+      opacity: 0;
+  }
+  .portfolio-text-container:hover::after{
+      content: "Of course I made my portfolio myself. I used Marvel to make the design and html and CSS for the actual scripting. I remade this website about 4 times throughout it's lifetime. I can finally say I'm happy with how it looks. It ofcourse will be updated with more functionality and information. Skills: HTML & Css & UX desinging skills.";
+      opacity: 1;
+  }
 .city-builder-text-container{
     background-color: #E6F9DE;
     border-radius: 15px;
@@ -211,6 +277,45 @@ body {
     margin-left: 26.5%;
     text-align: center;
     font-size:18px;
+    transition: background-color 0.3s ease;
+}
+.city-builder-text-container:hover{
+    background-color: #e2fed6;
+    transition: opacity 0.3s ease;
+}
+.city-builder-text-container::after{
+    content: ""; /* Content to be added on hover */
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .city-builder-text-container .box-text-city-builder {
+      transition: opacity 0.3s ease;
+    }
+  .city-builder-text-container:hover .box-text-city-builder {
+      opacity: 0;
+  }
+  .city-builder-text-container:hover::after{
+      content: "With school I started my own project, aptly named Project RTS City Builder. This project was meant to teach students about the first year of school and how to work on their personal work for school. However not everything went as planned. This project was once again a great opportunity for learning. Skills: Unity & Project management with Devops & C#";
+      opacity: 1;
+  }
+.box-text-defense{
+    text-align: center;
+    margin-top: 15%;
+}
+.box-text-kapper{
+    text-align: center;
+    margin-top: 15%;
+}
+.box-text-portfolio{
+    text-align: center;
+    margin-top: 15%;
+}
+.box-text-city-builder{
+    text-align: center;
+    margin-top: 1%;
+    
 }
 .project-box-container{
     display: flex;
@@ -260,7 +365,7 @@ body {
     width: 500px;
     height: 400px;
     margin-top: 40px;
-    margin-left: 26.5%;
+    margin-left: 36.6%;
     text-align: center;
     font-size:18px;
 
@@ -276,6 +381,12 @@ body {
     margin-top: 10px;
     font-weight: normal;
     color: #47525E;
+}
+.socials-name-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #47525E;
+    margin-top: 40px;
 }
 
 /* .arrow-right{
